@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliminar cuenta — Dexavision</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #f5f4f0;
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 3rem 1rem 4rem;
+      color: #1a1a18;
+    }
+
+    .page-wrap {
+      width: 100%;
+      max-width: 640px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 2.25rem;
+    }
+
+    .brand-dot {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #1D9E75;
+    }
+
+    .brand-name {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+      color: #1a1a18;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 0.5px solid rgba(0,0,0,0.12);
+      border-radius: 14px;
+      padding: 2.25rem 2.5rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #E1F5EE;
+      color: #0F6E56;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 4px 13px;
+      border-radius: 999px;
+      margin-bottom: 1.2rem;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.25;
+      color: #1a1a18;
+      margin-bottom: 0.65rem;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #666660;
+      line-height: 1.65;
+      margin-bottom: 1.75rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 0.5px solid rgba(0,0,0,0.1);
+      margin: 0 0 1.5rem;
+    }
+
+    .step {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 1.1rem;
+      align-items: flex-start;
+    }
+
+    .step-num {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #E1F5EE;
+      color: #0F6E56;
+      font-size: 12px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .step-text {
+      font-size: 14px;
+      color: #1a1a18;
+      line-height: 1.65;
+    }
+
+    .step-text strong {
+      font-weight: 500;
+    }
+
+    .email-box {
+      background: #f5f4f0;
+      border: 0.5px solid rgba(0,0,0,0.1);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 1.6rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .email-addr {
+      font-size: 15px;
+      font-weight: 500;
+      color: #0F6E56;
+    }
+
+    .copy-btn {
+      font-size: 12px;
+      font-weight: 500;
+      padding: 7px 16px;
+      border: 0.5px solid rgba(0,0,0,0.18);
+      background: #ffffff;
+      border-radius: 8px;
+      cursor: pointer;
+      color: #666660;
+      transition: background 0.15s;
+    }
+
+    .copy-btn:hover { background: #eeede9; }
+
+    .note {
+      font-size: 13px;
+      color: #888882;
+      line-height: 1.7;
+      margin-top: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 0.5px solid rgba(0,0,0,0.08);
+    }
+
+    .note a {
+      color: #1D9E75;
+      text-decoration: none;
+    }
+
+    .note a:hover { text-decoration: underline; }
+
+    @media (max-width: 480px) {
+      .card { padding: 1.5rem 1.25rem; }
+      h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+
+    <div class="brand">
+      <div class="brand-dot"></div>
+      <span class="brand-name">Dexavision</span>
+    </div>
+
+    <div class="card">
+      <span class="badge">Gestión de cuenta</span>
+
+      <h1>Solicitar eliminación<br>de cuenta</h1>
+      <p class="subtitle">
+        De acuerdo con nuestra política de privacidad, tienes derecho a solicitar
+        la eliminación permanente de tu cuenta y todos los datos asociados.
+      </p>
+
+      <hr />
+
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">
+          Envía un correo electrónico a nuestra dirección de contacto oficial
+          desde la cuenta asociada a tu perfil.
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">
+          Incluye en el mensaje tu <strong>nombre completo</strong> y el
+          <strong>correo electrónico</strong> registrado en la plataforma.
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">
+          Nuestro equipo procesará tu solicitud y te confirmará la eliminación
+          en un plazo de <strong>72 horas hábiles</strong>.
+        </div>
+      </div>
+
+      <div class="email-box">
+        <span class="email-addr">contacto@dexavision.cl</span>
+        <button class="copy-btn" onclick="
+          navigator.clipboard.writeText('contacto@dexavision.cl');
+          this.textContent = '¡Copiado!';
+          setTimeout(() => this.textContent = 'Copiar', 2000);
+        ">Copiar</button>
+      </div>
+
+      <p class="note">
+        Una vez eliminada, tu cuenta no podrá ser recuperada y perderás acceso
+        a todos los servicios asociados. Si tienes dudas, escríbenos antes de proceder.<br><br>
+        Para más información sobre el tratamiento de datos, consulta nuestra
+        <a href="#">política de privacidad</a>.
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
